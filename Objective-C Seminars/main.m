@@ -6,26 +6,16 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Circle.h"
-#import "Rectangle.h"
-#import "Triangle.h"
-#import "AbstractFigure.h"
+#import "Doctor.h"
+#import "Patient.h"
 
 int main(int argc, const char *argv[]) {
     @autoreleasepool {
-        Circle *circle = [[Circle alloc]initWithDiameter:20];
-        Rectangle *rectangle = [[Rectangle alloc]initWithHeightAndWeight:20 weight:10];
-        Triangle *triangle = [[Triangle alloc]initWithRightLeftTurnsAndFoundation:15 leftTurn:10 foundation:15];
-        
-        NSMutableArray <id<AbstractFigure>> *array = [[NSMutableArray alloc]init];
-        
-        [array addObject:circle];
-        [array addObject:rectangle];
-        [array addObject:triangle];
-        
-        for (id<AbstractFigure> figure in array) {
-            NSLog(@"%@", figure);
-        }
+        Doctor *doctor = [[Doctor alloc]initWithName:@"Genry"];
+        Patient *patient = [[Patient alloc]initWithName:@"Alex"];
+        doctor.delegate = patient;
+        patient.delegate = doctor;
+        [doctor prescribeMedicine];
     }
     return 0;
 }

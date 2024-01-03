@@ -8,9 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		106AF7AF2B3D69F300304CE8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 106AF7AE2B3D69F300304CE8 /* main.m */; };
-		1077C3AF2B4548A7004D055E /* Circle.m in Sources */ = {isa = PBXBuildFile; fileRef = 1077C3AE2B4548A7004D055E /* Circle.m */; };
-		1077C3B22B4558CF004D055E /* Rectangle.m in Sources */ = {isa = PBXBuildFile; fileRef = 1077C3B12B4558CF004D055E /* Rectangle.m */; };
-		1077C3B52B455FC2004D055E /* Triangle.m in Sources */ = {isa = PBXBuildFile; fileRef = 1077C3B42B455FC2004D055E /* Triangle.m */; };
+		1077C3C12B45CF09004D055E /* Doctor.m in Sources */ = {isa = PBXBuildFile; fileRef = 1077C3C02B45CF09004D055E /* Doctor.m */; };
+		1077C3C42B45CF1A004D055E /* Patient.m in Sources */ = {isa = PBXBuildFile; fileRef = 1077C3C32B45CF1A004D055E /* Patient.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,13 +27,12 @@
 /* Begin PBXFileReference section */
 		106AF7AB2B3D69F300304CE8 /* Objective-C Seminars */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Objective-C Seminars"; sourceTree = BUILT_PRODUCTS_DIR; };
 		106AF7AE2B3D69F300304CE8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		1077C3AA2B4547CB004D055E /* AbstractFigure.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AbstractFigure.h; sourceTree = "<group>"; };
-		1077C3AD2B4548A7004D055E /* Circle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Circle.h; sourceTree = "<group>"; };
-		1077C3AE2B4548A7004D055E /* Circle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Circle.m; sourceTree = "<group>"; };
-		1077C3B02B4558CF004D055E /* Rectangle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Rectangle.h; sourceTree = "<group>"; };
-		1077C3B12B4558CF004D055E /* Rectangle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Rectangle.m; sourceTree = "<group>"; };
-		1077C3B32B455FC2004D055E /* Triangle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Triangle.h; sourceTree = "<group>"; };
-		1077C3B42B455FC2004D055E /* Triangle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Triangle.m; sourceTree = "<group>"; };
+		1077C3BE2B45CD73004D055E /* DoctorDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DoctorDelegate.h; sourceTree = "<group>"; };
+		1077C3BF2B45CF09004D055E /* Doctor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Doctor.h; sourceTree = "<group>"; };
+		1077C3C02B45CF09004D055E /* Doctor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Doctor.m; sourceTree = "<group>"; };
+		1077C3C22B45CF1A004D055E /* Patient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Patient.h; sourceTree = "<group>"; };
+		1077C3C32B45CF1A004D055E /* Patient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Patient.m; sourceTree = "<group>"; };
+		1077C3C52B45D55D004D055E /* PatientDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PatientDelegate.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,14 +65,13 @@
 		106AF7AD2B3D69F300304CE8 /* Objective-C Seminars */ = {
 			isa = PBXGroup;
 			children = (
-				1077C3B32B455FC2004D055E /* Triangle.h */,
-				1077C3B42B455FC2004D055E /* Triangle.m */,
 				106AF7AE2B3D69F300304CE8 /* main.m */,
-				1077C3AA2B4547CB004D055E /* AbstractFigure.h */,
-				1077C3AD2B4548A7004D055E /* Circle.h */,
-				1077C3AE2B4548A7004D055E /* Circle.m */,
-				1077C3B02B4558CF004D055E /* Rectangle.h */,
-				1077C3B12B4558CF004D055E /* Rectangle.m */,
+				1077C3BE2B45CD73004D055E /* DoctorDelegate.h */,
+				1077C3BF2B45CF09004D055E /* Doctor.h */,
+				1077C3C02B45CF09004D055E /* Doctor.m */,
+				1077C3C22B45CF1A004D055E /* Patient.h */,
+				1077C3C52B45D55D004D055E /* PatientDelegate.h */,
+				1077C3C32B45CF1A004D055E /* Patient.m */,
 			);
 			path = "Objective-C Seminars";
 			sourceTree = "<group>";
@@ -136,10 +133,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1077C3C42B45CF1A004D055E /* Patient.m in Sources */,
+				1077C3C12B45CF09004D055E /* Doctor.m in Sources */,
 				106AF7AF2B3D69F300304CE8 /* main.m in Sources */,
-				1077C3AF2B4548A7004D055E /* Circle.m in Sources */,
-				1077C3B22B4558CF004D055E /* Rectangle.m in Sources */,
-				1077C3B52B455FC2004D055E /* Triangle.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
