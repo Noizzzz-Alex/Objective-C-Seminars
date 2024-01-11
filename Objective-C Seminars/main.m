@@ -6,16 +6,37 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Doctor.h"
-#import "Patient.h"
+#import "Robot.h"
+
 
 int main(int argc, const char *argv[]) {
     @autoreleasepool {
-        Doctor *doctor = [[Doctor alloc]initWithName:@"Genry"];
-        Patient *patient = [[Patient alloc]initWithName:@"Alex"];
-        doctor.delegate = patient;
-        patient.delegate = doctor;
-        [doctor prescribeMedicine];
+        typedef NSString* (^Moving) (NSString*);
+        
+        Moving moveUp = ^NSString* (NSString* turn){
+            return @"up";
+        };
+        Moving moveDown = ^NSString* (NSString* turn){
+            return @"down";
+        };
+        Moving moveLeft = ^NSString* (NSString* turn){
+            return @"left";
+        };
+        Moving moveRight = ^NSString* (NSString* turn){
+            return @"right";
+        };
+        
+        
+        
+        Robot *robot = [[Robot alloc]initWithName:@"Genry"];
+        
+        [robot run:moveUp];
+        [robot run:moveUp];
+        [robot run:moveUp];
+        [robot run:moveLeft];
+        [robot run:moveLeft];
+        [robot run:moveDown];
+        [robot run:moveRight];
     }
     return 0;
 }

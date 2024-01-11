@@ -7,9 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		102CC69C2B505A5300B57439 /* Robot.m in Sources */ = {isa = PBXBuildFile; fileRef = 102CC69B2B505A5300B57439 /* Robot.m */; };
 		106AF7AF2B3D69F300304CE8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 106AF7AE2B3D69F300304CE8 /* main.m */; };
-		1077C3C12B45CF09004D055E /* Doctor.m in Sources */ = {isa = PBXBuildFile; fileRef = 1077C3C02B45CF09004D055E /* Doctor.m */; };
-		1077C3C42B45CF1A004D055E /* Patient.m in Sources */ = {isa = PBXBuildFile; fileRef = 1077C3C32B45CF1A004D055E /* Patient.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,14 +24,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		102CC69A2B505A5300B57439 /* Robot.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Robot.h; sourceTree = "<group>"; };
+		102CC69B2B505A5300B57439 /* Robot.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Robot.m; sourceTree = "<group>"; };
 		106AF7AB2B3D69F300304CE8 /* Objective-C Seminars */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Objective-C Seminars"; sourceTree = BUILT_PRODUCTS_DIR; };
 		106AF7AE2B3D69F300304CE8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		1077C3BE2B45CD73004D055E /* DoctorDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DoctorDelegate.h; sourceTree = "<group>"; };
-		1077C3BF2B45CF09004D055E /* Doctor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Doctor.h; sourceTree = "<group>"; };
-		1077C3C02B45CF09004D055E /* Doctor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Doctor.m; sourceTree = "<group>"; };
-		1077C3C22B45CF1A004D055E /* Patient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Patient.h; sourceTree = "<group>"; };
-		1077C3C32B45CF1A004D055E /* Patient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Patient.m; sourceTree = "<group>"; };
-		1077C3C52B45D55D004D055E /* PatientDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PatientDelegate.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,12 +61,8 @@
 			isa = PBXGroup;
 			children = (
 				106AF7AE2B3D69F300304CE8 /* main.m */,
-				1077C3BE2B45CD73004D055E /* DoctorDelegate.h */,
-				1077C3BF2B45CF09004D055E /* Doctor.h */,
-				1077C3C02B45CF09004D055E /* Doctor.m */,
-				1077C3C22B45CF1A004D055E /* Patient.h */,
-				1077C3C52B45D55D004D055E /* PatientDelegate.h */,
-				1077C3C32B45CF1A004D055E /* Patient.m */,
+				102CC69A2B505A5300B57439 /* Robot.h */,
+				102CC69B2B505A5300B57439 /* Robot.m */,
 			);
 			path = "Objective-C Seminars";
 			sourceTree = "<group>";
@@ -133,8 +124,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1077C3C42B45CF1A004D055E /* Patient.m in Sources */,
-				1077C3C12B45CF09004D055E /* Doctor.m in Sources */,
+				102CC69C2B505A5300B57439 /* Robot.m in Sources */,
 				106AF7AF2B3D69F300304CE8 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
